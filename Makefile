@@ -12,7 +12,7 @@ WIP:
 	client-wip server-wip
 
 server-wip: 
-	$(CC) $(SRC)/server.c $(CFLAGS) $(ASAN) -o server-test 
+	$(CC) $(SRC)/server.c -pthread $(CFLAGS) $(ASAN) -o server-test 
 
 .PHONY: clean all WIP
 
